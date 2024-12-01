@@ -109,7 +109,7 @@ async def output_answer(message: Message, ifgive, data_raw):
                                      f'Пола {gender}, c общим изменением баланса {total_revolving_bal}, '
                                      f'С {total_relationship_count} родственниками. Хочет взять в ипотеку '
                                      f'квартиру с {num_room} комнатами. Он {verdict}. '
-                                     f'Почему ему позволили ее взять, дай КРАТКОЕ объяснение.')
+                                     f'Почему ему НЕ позволили ее взять, дай КРАТКОЕ объяснение.')
         await message.answer(f"Почему человек Ни при каких условиях не может получить ипотеку? <b>Объясняет Gigachat:</b>\n {answer.json()['choices'][0]['message']['content']}",parse_mode="HTML")
 
 #! Handlers
